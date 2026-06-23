@@ -69,6 +69,8 @@ video{
 
 <h1>Oussama & Roua</h1>
 
+<p id="guest"></p>
+
 <p>
 C'est avec beaucoup d'amour et de bonheur que nous vous invitons à partager le plus beau jour de notre vie.
 </p>
@@ -110,9 +112,21 @@ Voir l'itinéraire
 
 <img src="DSC01034.jpg" alt="Oussama et Roua">
 
+<img src="image00017.jpeg" alt="Oussama et Roua">
+
+<img src="9A8056DE-D91F-40A0-896E-32DC574C2291.jpeg" alt="Oussama et Roua">
+
 </div>
 
 <script>
+
+const params = new URLSearchParams(window.location.search);
+const invite = params.get("invite");
+
+if(invite){
+document.getElementById("guest").innerHTML =
+"<strong>Cher(e) " + invite + ",</strong>";
+}
 
 const weddingDate = new Date("August 2, 2026 21:00:00").getTime();
 
