@@ -26,6 +26,8 @@ body{
 }
 
 .cover{
+    position:relative;
+overflow:hidden;
     height:100vh;
     background:url('DSC01004-2.jpg') center center/cover no-repeat;
     display:flex;
@@ -38,6 +40,8 @@ body{
     box-sizing:border-box;
 }
 .cover::after{
+    pointer-events:none;
+z-index:1;
     content:"";
     position:absolute;
     inset:0;
@@ -46,7 +50,10 @@ body{
         rgba(0,0,0,0.35) 100%
     );
 }
-..cover h1{
+.cover h1,
+.cover p{
+    position:relative;
+    z-index:2;
     font-size:2.9em;
     line-height:1.1;
     transform:translateY(80px);
