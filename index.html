@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
 <title>Oussama & Roua</title>
 
 <style>
+
 body{
     margin:0;
     font-family:Arial, sans-serif;
@@ -25,7 +27,7 @@ h1{
 }
 
 .countdown{
-    font-size:1.5em;
+    font-size:1.8em;
     margin:20px;
     font-weight:bold;
 }
@@ -48,8 +50,17 @@ img{
     max-width:700px;
     border-radius:15px;
     margin:15px auto;
+    display:block;
 }
+
+video{
+    width:90%;
+    max-width:700px;
+    border-radius:15px;
+}
+
 </style>
+
 </head>
 
 <body>
@@ -73,22 +84,24 @@ C'est avec beaucoup d'amour et de bonheur que nous vous invitons à partager le 
 <h2>Arcadia Wedding</h2>
 
 <a class="btn"
-href="https://maps.app.goo.gl/tywXgSKoDuLP1YqXA?g_st=ac">
+href="https://maps.app.goo.gl/tywXgSKoDuLP1YqXA?g_st=ac"
+target="_blank">
 Voir l'itinéraire
 </a>
 
+</div>
 
 <div class="section">
 
 <h2>Notre Vidéo</h2>
 
-<video width="90%" autoplay muted playsinline loop>
+<video autoplay muted playsinline loop>
     <source src="Video.mp4" type="video/mp4">
     Votre navigateur ne supporte pas la vidéo.
 </video>
 
 </div>
-<script>
+
 <div class="section">
 
 <h2>Nos Photos</h2>
@@ -98,6 +111,9 @@ Voir l'itinéraire
 <img src="DSC01034.jpg" alt="Oussama et Roua">
 
 </div>
+
+<script>
+
 const weddingDate = new Date("August 2, 2026 21:00:00").getTime();
 
 setInterval(function(){
@@ -112,10 +128,10 @@ const minutes = Math.floor((distance%(1000*60*60))/(1000*60));
 const seconds = Math.floor((distance%(1000*60))/1000);
 
 document.getElementById("countdown").innerHTML =
-days+" jours "
-+hours+" h "
-+minutes+" min "
-+seconds+" sec";
+days + " jours "
++ hours + " h "
++ minutes + " min "
++ seconds + " sec";
 
 },1000);
 
