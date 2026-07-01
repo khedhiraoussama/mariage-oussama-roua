@@ -142,6 +142,35 @@ video,
         transform:translateY(0);
     }
 }
+    .countdown-boxes{
+    display:flex;
+    justify-content:center;
+    gap:12px;
+    margin:20px 0;
+}
+
+.box{
+    background:#ffffff;
+    width:70px;
+    padding:15px 10px;
+    border-radius:15px;
+    box-shadow:0 6px 18px rgba(0,0,0,0.12);
+}
+
+.box span{
+    display:block;
+    font-size:28px;
+    font-weight:bold;
+    color:#0F2747;
+}
+
+.box small{
+    display:block;
+    margin-top:5px;
+    font-size:12px;
+    color:#d4b36a;
+    font-weight:bold;
+}
 </style>
 
 </script>
@@ -188,7 +217,27 @@ letter-spacing:2px;
 📅 Dimanche 2 août 2026
 🕘 21h00
 </p>
-<div class="countdown" id="countdown"></div>
+<div class="countdown-boxes">
+
+  <div class="box">
+    <span id="days">00</span>
+    <small>Jours</small>
+  </div>
+
+  <div class="box">
+    <span id="hours">00</span>
+    <small>Heures</small>
+  </div>
+
+  <div class="box">
+    <span id="minutes">00</span>
+    <small>Minutes</small>
+  </div>
+
+  <div class="box">
+    <span id="seconds">00</span>
+    <small>Secondes</small>
+  </div>
 
 </div>
 
